@@ -37,7 +37,7 @@ float rtflsp(float (*func)(float), float x1, float x2, float xacc)
 		}
 		dx=xh-xl;
 		if (fabs(del) < xacc || f == 0.0) {
-			printf("iteration : %d\n", j-1);
+			printf("iteration : %d\n", j);
 			return rtf;}
 	}
 	nrerror("Maximum number of iterations exceeded in rtflsp");

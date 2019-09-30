@@ -18,7 +18,7 @@ float rtnewt(void (*funcd)(float, float *, float *), float x1, float x2,
 		if ((x1-rtn)*(rtn-x2) < 0.0)
 			nrerror("Jumped out of brackets in rtnewt");
 		if (fabs(dx) < xacc) {
-			printf("iteration : %d\n", j-1);return rtn;}
+			printf("iteration : %d\n", j);return rtn;}
 	}
 	nrerror("Maximum number of iterations exceeded in rtnewt");
 	return 0.0;

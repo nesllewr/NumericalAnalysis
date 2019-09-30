@@ -27,7 +27,7 @@ float rtsec(float (*func)(float), float x1, float x2, float xacc)
 		fl=f;
 		rts += dx;
 		f=(*func)(rts);
-		if (fabs(dx) < xacc || f == 0.0) {printf("iteration : %d\n", j-1);return rts;}
+		if (fabs(dx) < xacc || f == 0.0) {printf("iteration : %d\n", j);return rts;}
 	}
 	nrerror("Maximum number of iterations exceeded in rtsec");
 	return 0.0;

@@ -17,7 +17,7 @@ float rtbis(float (*func)(float), float x1, float x2, float xacc)
 		fmid=(*func)(xmid=rtb+(dx *= 0.5));
 		if (fmid <= 0.0) rtb=xmid;
 		if (fabs(dx) < xacc || fmid == 0.0) {
-			printf("iteration : %d\n", j-1);
+			printf("iteration : %d\n", j);
 			return rtb;}
 	}
 	nrerror("Too many bisections in rtbis");
